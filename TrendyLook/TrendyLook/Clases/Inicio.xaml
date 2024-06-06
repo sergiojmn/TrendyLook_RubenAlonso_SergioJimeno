@@ -1,0 +1,64 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
+             x:Class="TrendyLook.Inicio"
+             Title="Inicio"
+             BackgroundImageSource="fondo3.png">
+
+    <ContentPage.Resources>
+        <!--El icono de Inicio arriba izquierda-->
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="gradient" EndPoint="0,1">
+                <GradientStop Offset="0" Color="Aqua"/>
+                <GradientStop Offset="0.85" Color="Pink"/>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Spacing="25" Padding="25" VerticalOptions="StartAndExpand">
+            <!--El icono de Inicio arriba izquierda-->
+            <Border WidthRequest="75" HeightRequest="75" Stroke="{StaticResource gradient}" StrokeThickness="5" >
+                <Border.StrokeShape>
+                    <Ellipse />
+                </Border.StrokeShape>
+                <ImageButton Source="trendylook2.png" WidthRequest="95"/>
+            </Border>
+
+            <!--Label informativo-->
+            <Label Text="Nuestros productos más Top" HorizontalTextAlignment="Start" FontFamily="60" FontSize="Title" TextColor="White" FontAttributes="Bold">
+                <Label.Shadow>
+                    <Shadow Brush="Black" Opacity="1" Offset="10,10"/>
+                </Label.Shadow>
+            </Label>
+
+            <!--Carrusel-->
+            <CarouselView x:Name="carrusel" VerticalOptions="Start" IndicatorView="indicatorView">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Border BackgroundColor="#311B45" Stroke="#6E557C" StrokeShape="RoundRectangle">
+                            <Grid>
+                                <StackLayout BackgroundColor="Transparent" Padding="10" VerticalOptions="FillAndExpand">
+                                    <Label Padding="20" TextColor="Wheat" FontSize="Title" TextDecorations="Underline" TextTransform="Uppercase" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="{Binding Titulo}"/>
+                                    <Image Source="{Binding Imagen}" HeightRequest="180" VerticalOptions="FillAndExpand"/>
+                                    <Label TextColor="White" FontSize="Large" HorizontalTextAlignment="Start" Text="{Binding Descripcion}"/>
+                                    <Button Text="Comprar producto" Background="White" TextColor="Black" Clicked="Enlaces" CommandParameter="{Binding .}" Margin="0,10,0,0" />
+                                </StackLayout>
+                            </Grid>
+                            <Border.Shadow>
+                                <Shadow Brush="MediumPurple" Opacity="0.9" Offset="0,0"/>
+                            </Border.Shadow>
+                        </Border>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <!-- IndicatorView (los puntitos) -->
+            <IndicatorView x:Name="indicatorView"
+                IndicatorColor="White"
+                SelectedIndicatorColor="Aqua"
+                HorizontalOptions="Center" />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrendyLook.AcercaDe"
+             Title="AcercaDe"
+             BackgroundImageSource="fondo1">
+
+    <ContentPage.Resources>
+        <!--El icono de Inicio arriba izquierda-->
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="gradient" EndPoint="0,1">
+                <GradientStop Offset="0" Color="Aqua"/>
+                <GradientStop Offset="0.85" Color="Pink"/>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView BackgroundColor="LightGray" Opacity="0.8">
+        <StackLayout VerticalOptions="FillAndExpand">
+            <StackLayout Spacing="25" Padding="25" VerticalOptions="StartAndExpand">
+                <!--El icono de Inicio arriba izquierda-->
+                <Border WidthRequest="75" HeightRequest="75" Stroke="{StaticResource gradient}" StrokeThickness="5" >
+                    <Border.StrokeShape>
+                        <Ellipse />
+                    </Border.StrokeShape>
+                    <ImageButton Source="trendylook2.png" WidthRequest="95"/>
+                </Border>
+
+                <!-- Título -->
+                <Label Text="Sobre Nosotros..." TextTransform="Uppercase" FontSize="Title" HorizontalTextAlignment="Center" TextColor="Black"/>
+
+                <!-- Descripción -->
+                <Label FontSize="Body">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span TextColor="Black" Text="TrendyLook es una aplicación móvil dedicada a la comodidad de los clientes de la estética y belleza, gracias a ella estamos a la última de las tecnologías sin perder nuestro glamour único." />
+     <!-- Salto de línea --><Span Text="&#10;"/>
+                            <Span TextColor="Black" Text="¡Esperamos que la disfrutes tanto como nosotros disfrutamos creándola!" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+
+            <!-- Información adicional -->
+            <StackLayout Spacing="10" HorizontalOptions="CenterAndExpand">
+                <Label TextColor="Black" FontSize="Body" Text="Versión: 1.0" HorizontalOptions="Center"/>
+                <Label TextColor="Black" Text="Desarrollado por: Rubén Alonso y Sergio Jimeno" HorizontalOptions="Center" Padding="12"/>
+                <Label TextColor="Black" FontSize="Body" Text="©2024 TrendyLook" HorizontalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

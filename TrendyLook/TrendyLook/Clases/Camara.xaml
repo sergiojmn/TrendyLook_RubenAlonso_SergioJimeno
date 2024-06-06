@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrendyLook.Camara"
+             Title="Camara"
+             BackgroundImageSource="fondo3">
+
+    <ContentPage.Resources>
+        <!--El icono de Inicio arriba izquierda-->
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="gradient" EndPoint="0,1">
+                <GradientStop Offset="0" Color="Aqua"/>
+                <GradientStop Offset="0.85" Color="Pink"/>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Spacing="25" Padding="25" VerticalOptions="StartAndExpand">
+            <!--El icono de Inicio arriba izquierda-->
+            <Border WidthRequest="75" HeightRequest="75" Stroke="{StaticResource gradient}" StrokeThickness="5" >
+                <Border.StrokeShape>
+                    <Ellipse />
+                </Border.StrokeShape>
+                <ImageButton Source="trendylook2.png" WidthRequest="95"/>
+            </Border>
+
+            <!--Cámara-->
+            <Button x:Name="btnHacerFoto" TextColor="Black" 
+                    BackgroundColor="NavajoWhite" 
+                    Text="Hacer Foto" 
+                    Clicked="HacerFoto"/>
+            
+            <Button x:Name="btnVerFoto" TextColor="Black" 
+                    BackgroundColor="NavajoWhite" 
+                    Text="Ver Foto" 
+                    Clicked="VerFoto"/>
+            
+            <Image x:Name="imgFoto"/>
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

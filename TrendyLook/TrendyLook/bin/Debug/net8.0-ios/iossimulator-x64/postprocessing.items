@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="TrendyLook.app/TrendyLook">
+      <BCSymbolMapName>TrendyLook.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>TrendyLook.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>\Users\pedrolanseros\Library\Caches\Xamarin\mtbs\builds\TrendyLook\f3b9cf96cccc9b4df8b93fc3e6f30315ad341f604f560a994e36b67872631bee\obj\Debug\net8.0-ios\iossimulator-x64\mtouch-symbols.list</SymbolFile>
+      <DSymName>TrendyLook.app.dSYM</DSymName>
+      <SourceProjectPath>C:\Users\rubenalonso\Downloads\TrendyLook\TrendyLook</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

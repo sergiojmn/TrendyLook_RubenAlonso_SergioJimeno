@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrendyLook.Login"
+             Title="Login"
+             BackgroundImageSource="fondo2.png">
+
+    <ContentPage.Resources>
+        <!--El icono de Inicio arriba izquierda-->
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="gradient" EndPoint="0,1">
+                <GradientStop Offset="0" Color="Aqua"/>
+                <GradientStop Offset="0.85" Color="Pink"/>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Spacing="25" Padding="25" VerticalOptions="StartAndExpand">
+            <!--El icono de Inicio arriba izquierda-->
+            <Border WidthRequest="75" HeightRequest="75" Stroke="{StaticResource gradient}" StrokeThickness="5" >
+                <Border.StrokeShape>
+                    <Ellipse />
+                </Border.StrokeShape>
+                <ImageButton Source="trendylook2.png" WidthRequest="95"/>
+            </Border>
+
+            <!--Login-->
+            <VerticalStackLayout Spacing="5">
+                <Label Text="¡Bienvenido!" FontSize="25" TextColor="White" HorizontalTextAlignment="Center" FontAttributes="Bold">
+                    <Label.Shadow>
+                        <Shadow Brush="Black" Opacity="1" Offset="10,10"/>
+                    </Label.Shadow>
+                </Label>
+                <Label Text="Inicia sesión y sigue disfrutando de nuestra app" FontSize="15" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center">
+                    <Label.Shadow>
+                        <Shadow Brush="Black" Opacity="1" Offset="10,10"/>
+                    </Label.Shadow>
+                </Label>
+            </VerticalStackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" CornerRadius="28" HeightRequest="56" WidthRequest="56" Margin="0,0,12,0">
+                    <Image Source="email.png" HeightRequest="35" WidthRequest="35" VerticalOptions="Center"/>
+                </Frame>
+                <Frame Padding="0" HeightRequest="45" HasShadow="True" BorderColor="White" CornerRadius="15" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="entryuser" TextColor="Black" Margin="20,0,0,0" Keyboard="Email" VerticalOptions="Center" Placeholder="Correo electrónico"/>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" CornerRadius="28" HeightRequest="56" WidthRequest="56" Margin="0,0,12,0">
+                    <Image Source="lock.png" HeightRequest="45" WidthRequest="45" VerticalOptions="Center"/>
+                </Frame>
+                <Frame Padding="0" HeightRequest="45" HasShadow="True" BorderColor="White" CornerRadius="15" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="entrypassword" TextColor="Black" Margin="20,0,0,0" IsPassword="True" VerticalOptions="Center" Placeholder="Contraseña" HorizontalOptions="FillAndExpand"/>
+                </Frame>
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" CornerRadius="28" HeightRequest="40" WidthRequest="40" Margin="6,0,0,0">
+                    <ImageButton Source="ojocerrado.png" Clicked="VerContraseña" BorderColor="White" HeightRequest="30" WidthRequest="30" VerticalOptions="Center"/>
+                </Frame>
+            </StackLayout>
+
+            <Label x:Name="lblpassword" Text="¿Has olvidado tu contraseña?" TextColor="Black" HorizontalTextAlignment="Center">
+                <Label.Shadow>
+                    <Shadow Brush="Gray" Opacity="1" Offset="10,10"/>
+                </Label.Shadow>
+            </Label>
+            <Button x:Name="btnlogin" Text="Iniciar Sesión" Padding="13" CornerRadius="20" HorizontalOptions="Center" Clicked="IniciarSesion"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

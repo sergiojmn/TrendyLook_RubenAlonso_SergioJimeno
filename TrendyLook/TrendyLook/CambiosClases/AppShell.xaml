@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       x:Class="TrendyLook.AppShell"
+       xmlns:local="clr-namespace:TrendyLook"
+       Shell.FlyoutBehavior="Disabled">
+
+    <!--Definir TabBar-->
+    <TabBar>
+        <Tab Title="Principal" Icon="house.png">
+            <ShellContent x:Name="inicioTab" Title="Inicio" ContentTemplate="{DataTemplate local:Inicio}" Route="Inicio"/>
+            <ShellContent x:Name="mapaTab" Title="Mapa" ContentTemplate="{DataTemplate local:Mapa}" Route="Mapa"/>
+        </Tab>
+
+        <Tab Title="Usuario" Icon="user.png">
+            <ShellContent x:Name="loginTab" Title="Iniciar Sesión" ContentTemplate="{DataTemplate local:Login}" Route="Login"/>
+            <ShellContent x:Name="registrarseTab" Title="Registrarse" ContentTemplate="{DataTemplate local:Registrarse}" Route="Registrarse"/>
+            <ShellContent x:Name="perfilTab" Title="Perfil" ContentTemplate="{DataTemplate local:Perfil}" Route="Perfil"/>
+        </Tab>
+
+        <Tab Title="Citas" Icon="calendario.png">
+            <ShellContent x:Name="citasTab" Title="Citas" ContentTemplate="{DataTemplate local:Citas}" Route="Citas"/>
+            <ShellContent x:Name="registroTab" Title="Registro de Citas" ContentTemplate="{DataTemplate local:RegistroCitas}" Route="RegistroCitas"/>
+        </Tab>
+
+        <Tab Title="Soporte" Icon="configuracion.png">
+            <ShellContent x:Name="soporteTab" Title="Soporte Técnico" ContentTemplate="{DataTemplate local:Soporte}" Route="Soporte"/>
+            <ShellContent x:Name="soporteEmpleadosTab" Title="Soporte Técnico" ContentTemplate="{DataTemplate local:SoporteEmpleados}" Route="SoporteEmpleados"/>
+            <ShellContent x:Name="adminRegistrosTab" Title="Administrador Roles" ContentTemplate="{DataTemplate local:AdminRoles}" Route="AdminRoles"/>
+            <ShellContent x:Name="darBajaTab" Title="Dar Baja" ContentTemplate="{DataTemplate local:DarBaja}" Route="DarBaja"/>
+        </Tab>
+
+        <Tab Title="Extras" Icon="notas.png">
+            <ShellContent x:Name="camaraTab" Title="Cámara" ContentTemplate="{DataTemplate local:Camara}" Route="Camara"/>
+            <ShellContent x:Name="acercaDeTab" Title="Acerca de" ContentTemplate="{DataTemplate local:AcercaDe}" Route="AcercaDe"/>
+            <ShellContent x:Name="notasTab" Title="Bloc de Notas" ContentTemplate="{DataTemplate local:AlmacenNotas}" Route="AlmacenNotas"/>
+        </Tab>
+    </TabBar>
+</Shell>

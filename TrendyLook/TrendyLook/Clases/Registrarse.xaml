@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrendyLook.Registrarse"
+             Title="Registrarse"
+             BackgroundImageSource="fondo1.png">
+
+    <ContentPage.Resources>
+        <!--El icono de Inicio arriba izquierda-->
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="gradient" EndPoint="0,1">
+                <GradientStop Offset="0" Color="Aqua"/>
+                <GradientStop Offset="0.85" Color="Pink"/>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Spacing="25" Padding="25" VerticalOptions="StartAndExpand">
+            <!--El icono de Inicio arriba izquierda-->
+            <Border WidthRequest="75" HeightRequest="75" Stroke="{StaticResource gradient}" StrokeThickness="5" >
+                <Border.StrokeShape>
+                    <Ellipse />
+                </Border.StrokeShape>
+                <ImageButton Source="trendylook2.png" WidthRequest="95"/>
+            </Border>
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="¡Bienvenido!" FontSize="25" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center">
+                    <Label.Shadow>
+                        <Shadow Brush="Black" Opacity="1" Offset="10,10"/>
+                    </Label.Shadow>
+                </Label>
+                <Label Text="Registrate y disfruta de todo el contenido exclusivo" FontSize="15" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center">
+                    <Label.Shadow>
+                        <Shadow Brush="Black" Opacity="1" Offset="10,10"/>
+                    </Label.Shadow>
+                </Label>
+            </VerticalStackLayout>
+
+            <!--Campos para registrarse-->
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" CornerRadius="28" HeightRequest="56" WidthRequest="56" Margin="0,0,12,0">
+                    <Image Source="email.png" HeightRequest="35" WidthRequest="35" VerticalOptions="Center"/>
+                </Frame>
+                <Frame Padding="0" HeightRequest="45" HasShadow="True" BorderColor="White" CornerRadius="15" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="entryemail" TextColor="Black" Margin="20,0,0,0" Keyboard="Email" VerticalOptions="Center" Placeholder="Correo electrónico"/>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" CornerRadius="28" HeightRequest="56" WidthRequest="56" Margin="0,0,12,0">
+                    <Image Source="user.png" HeightRequest="30" WidthRequest="30" VerticalOptions="Center"/>
+                </Frame>
+                <Frame Padding="0" HeightRequest="45" HasShadow="True" BorderColor="White" CornerRadius="15" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="entryuserregister" TextColor="Black" Margin="20,0,0,0" Keyboard="Email" VerticalOptions="Center" Placeholder="Nombre de usuario"/>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" CornerRadius="28" HeightRequest="56" WidthRequest="56" Margin="0,0,12,0">
+                    <Image Source="lock.png" HeightRequest="45" WidthRequest="45" VerticalOptions="Center"/>
+                </Frame>
+                <Frame Padding="0" HeightRequest="45" HasShadow="True" BorderColor="White" CornerRadius="15" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="entrypasswordregister" TextColor="Black" Margin="20,0,0,0" IsPassword="True" VerticalOptions="Center" Placeholder="Contraseña" HorizontalOptions="FillAndExpand"/>
+                </Frame>
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" CornerRadius="28" HeightRequest="40" WidthRequest="40" Margin="6,0,0,0">
+                    <ImageButton Source="ojocerrado.png" Clicked="VerContraseña" BorderColor="White" HeightRequest="30" WidthRequest="30" VerticalOptions="Center"/>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" CornerRadius="28" HeightRequest="56" WidthRequest="56" Margin="0,0,12,0">
+                    <Image Source="phone.png" HeightRequest="30" WidthRequest="30" VerticalOptions="Center"/>
+                </Frame>
+                <Frame Padding="0" HeightRequest="45" HasShadow="True" BorderColor="White" CornerRadius="15" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="entryphone" TextColor="Black" Margin="20,0,0,0" Keyboard="Telephone" VerticalOptions="Center" Placeholder="Teléfono (ej. 612345789)"/>
+                </Frame>
+            </StackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Center" RadioButtonGroup.GroupName="genero">
+                <HorizontalStackLayout.Shadow>
+                    <Shadow Brush="MediumPurple" Opacity="1" Offset="10,10"/>
+                </HorizontalStackLayout.Shadow>
+                <RadioButton x:Name="rbHombre" TextColor="White" FontAttributes="Bold" Content="Hombre"/>
+                <RadioButton x:Name="rbMujer" TextColor="White" FontAttributes="Bold" Content="Mujer"/>
+                <RadioButton x:Name="rbOtro" TextColor="White" FontAttributes="Bold" Content="Otro"/>
+            </HorizontalStackLayout>
+
+
+            <Button x:Name="btnregistrarse" Text="Registrarse" WidthRequest="120" CornerRadius="20" HorizontalOptions="Center" Clicked="RegistrarseBBDD"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

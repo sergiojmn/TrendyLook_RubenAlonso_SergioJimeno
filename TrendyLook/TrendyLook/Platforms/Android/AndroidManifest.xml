@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0.0">
+	<application android:usesCleartextTraffic="true" android:allowBackup="true" android:icon="@mipmap/trendylook" android:supportsRtl="true" android:label="TrendyLook">
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="" />
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<!--Permisos Internet-->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<!--Permisos de maps-->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<!--Permisos de maps-->
+
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<!--Permisos de cámara-->
+	
+	<queries>
+		<intent>
+			<!--Permisos de cámara-->
+			<action android:name="android.media.action.IMAGE_CAPTURE" />
+		</intent>
+	</queries>
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="34" />
+</manifest>

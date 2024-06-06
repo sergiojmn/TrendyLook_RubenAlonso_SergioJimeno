@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\sauna.png" />
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\marte.png" />
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\header.jpg" />
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\phone.png" />
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\dotnet_bot.png" />
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\user.png" />
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\real.jpg" />
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\esmalte.png" />
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\saturno.png" />
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\email.png" />
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\skincare.png" />
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\eyeliner.png" />
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\trendylook2@3x.png" />
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\trendylook2@2x.png" />
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\trendylook2.png" />
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\lock.png" />
+    <BundleResource Include="C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\champu.png" />
+  </ItemGroup>
+</Project>

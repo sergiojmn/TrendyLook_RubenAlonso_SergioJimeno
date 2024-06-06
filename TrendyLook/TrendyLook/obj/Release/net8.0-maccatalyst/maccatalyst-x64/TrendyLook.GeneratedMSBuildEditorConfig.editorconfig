@@ -1,0 +1,77 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TrendyLook
+build_property.ProjectDir = C:\Users\CFGS.LAB-35-PC10\Desktop\Bitbucket\TrendyLook\TrendyLook\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/CFGS.LAB-35-PC10/Desktop/Bitbucket/TrendyLook/TrendyLook/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TrendyLook.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/CFGS.LAB-35-PC10/Desktop/Bitbucket/TrendyLook/TrendyLook/CambiosClases/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TrendyLook.CambiosClases.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = CambiosClases\AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = CambiosClases\AppShell.xaml
+
+[C:/Users/CFGS.LAB-35-PC10/Desktop/Bitbucket/TrendyLook/TrendyLook/Clases/Camara.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TrendyLook.Clases.Camara.xaml
+build_metadata.AdditionalFiles.TargetPath = Clases\Camara.xaml
+build_metadata.AdditionalFiles.RelativePath = Clases\Camara.xaml
+
+[C:/Users/CFGS.LAB-35-PC10/Desktop/Bitbucket/TrendyLook/TrendyLook/Clases/Citas.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TrendyLook.Clases.Citas.xaml
+build_metadata.AdditionalFiles.TargetPath = Clases\Citas.xaml
+build_metadata.AdditionalFiles.RelativePath = Clases\Citas.xaml
+
+[C:/Users/CFGS.LAB-35-PC10/Desktop/Bitbucket/TrendyLook/TrendyLook/Clases/Inicio.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TrendyLook.Clases.Inicio.xaml
+build_metadata.AdditionalFiles.TargetPath = Clases\Inicio.xaml
+build_metadata.AdditionalFiles.RelativePath = Clases\Inicio.xaml
+
+[C:/Users/CFGS.LAB-35-PC10/Desktop/Bitbucket/TrendyLook/TrendyLook/Clases/Login.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TrendyLook.Clases.Login.xaml
+build_metadata.AdditionalFiles.TargetPath = Clases\Login.xaml
+build_metadata.AdditionalFiles.RelativePath = Clases\Login.xaml
+
+[C:/Users/CFGS.LAB-35-PC10/Desktop/Bitbucket/TrendyLook/TrendyLook/Clases/Registrarse.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TrendyLook.Clases.Registrarse.xaml
+build_metadata.AdditionalFiles.TargetPath = Clases\Registrarse.xaml
+build_metadata.AdditionalFiles.RelativePath = Clases\Registrarse.xaml
+
+[C:/Users/CFGS.LAB-35-PC10/Desktop/Bitbucket/TrendyLook/TrendyLook/Clases/Soporte.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TrendyLook.Clases.Soporte.xaml
+build_metadata.AdditionalFiles.TargetPath = Clases\Soporte.xaml
+build_metadata.AdditionalFiles.RelativePath = Clases\Soporte.xaml
+
+[C:/Users/CFGS.LAB-35-PC10/Desktop/Bitbucket/TrendyLook/TrendyLook/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TrendyLook.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/CFGS.LAB-35-PC10/Desktop/Bitbucket/TrendyLook/TrendyLook/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TrendyLook.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

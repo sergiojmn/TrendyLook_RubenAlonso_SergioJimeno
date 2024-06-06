@@ -1,0 +1,53 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrendyLook.Perfil"
+             Title="Perfil"
+             BackgroundImageSource="fondo2.png">
+
+    <ContentPage.Resources>
+        <!--El icono de Inicio arriba izquierda-->
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="gradient" EndPoint="0,1">
+                <GradientStop Offset="0" Color="Aqua"/>
+                <GradientStop Offset="0.85" Color="Pink"/>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Spacing="25" Padding="25" VerticalOptions="StartAndExpand">
+            <!--El icono de Inicio arriba izquierda-->
+            <Border WidthRequest="75" HeightRequest="75" Stroke="{StaticResource gradient}" StrokeThickness="5" >
+                <Border.StrokeShape>
+                    <Ellipse />
+                </Border.StrokeShape>
+                <ImageButton Source="trendylook2.png" WidthRequest="95"/>
+            </Border>
+
+            <!-- Bienvenida -->
+            <Frame BackgroundColor="LightGoldenrodYellow" Padding="10" CornerRadius="10" Margin="0,20,0,0">
+                <Label x:Name="bienvenido" FontSize="Large" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" />
+            </Frame>
+
+            <!-- Cambiar Contraseña -->
+            <Button Margin="0,20,0,0" TextColor="Black" 
+                    BackgroundColor="NavajoWhite" 
+                    Text="Cambiar Contraseña" 
+                    Clicked="CambiarContrasena"/>
+
+            <!-- Cerrar Sesión -->
+            <Button Margin="0,-10,0,0" TextColor="Black" 
+                    BackgroundColor="NavajoWhite" 
+                    x:Name="cerrar" Text="Cerrar Sesión" 
+                    Clicked="CerrarSesion"/>
+
+            <!-- Darse de Baja -->
+            <Button Margin="0,250,0,0" TextColor="Red" 
+                    FontAttributes="Bold"
+                    BackgroundColor="NavajoWhite" 
+                    Text="Eliminar mi cuenta" 
+                    Clicked="DarseDeBaja"/>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

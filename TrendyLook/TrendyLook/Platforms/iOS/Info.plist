@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>LSRequiresIPhoneOS</key>
+		<true/>
+		<key>UIDeviceFamily</key>
+		<array>
+			<integer>1</integer>
+			<integer>2</integer>
+		</array>
+		<key>UIRequiredDeviceCapabilities</key>
+		<array>
+			<string>arm64</string>
+		</array>
+		<key>UILaunchStoryboardName</key>
+		<string>MauiSplash</string>
+		<key>UISupportedInterfaceOrientations</key>
+		<array>
+			<string>UIInterfaceOrientationPortrait</string>
+		</array>
+		<key>UISupportedInterfaceOrientations~ipad</key>
+		<array>
+			<string>UIInterfaceOrientationPortrait</string>
+			<string>UIInterfaceOrientationPortraitUpsideDown</string>
+			<string>UIInterfaceOrientationLandscapeLeft</string>
+			<string>UIInterfaceOrientationLandscapeRight</string>
+		</array>
+		<key>XSAppIconAssets</key>
+		<string>Assets.xcassets/trendylook.appiconset</string>
+
+		<key>NSCameraUsageDescription</key>
+		<!--Permisos de la cámara-->
+		<string>Se necesita acceso a la cámara para tomar fotos y videos.</string>
+		<key>NSPhotoLibraryUsageDescription</key>
+		<!--Permisos de la galería -->
+		<string>Se necesita acceso a la galería de fotos para seleccionar imágenes y videos desde la biblioteca.</string>
+		<key>CFBundleShortVersionString</key>
+		<string>1.0.0</string>
+		<key>NSMicrophoneUsageDescription</key>
+		<!--Permisos de micrófono-->
+		<string>Se necesita permisos para utilizar el micrófono.</string>
+		<key>NSPhotoLibraryAddUsageDescription</key>
+		<!--Permisos para poder seleccionar imagenes/videos-->
+		<string>Se necesita permisos para seleccionar imagenes/videos.</string>
+	</dict>
+</plist>
