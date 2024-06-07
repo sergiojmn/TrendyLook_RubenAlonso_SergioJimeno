@@ -1,6 +1,0 @@
-@TrendyLookAPI_HostAddress = http://localhost:5255
-
-GET {{TrendyLookAPI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
